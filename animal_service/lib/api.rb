@@ -7,7 +7,7 @@ module AnimalServiceAPI
 
     get '/alligator' do
       content_type :json
-      { :name => "Betty" }.to_json
+      { :name => "BETTY", :age => 8 }.to_json
     end
 
   end

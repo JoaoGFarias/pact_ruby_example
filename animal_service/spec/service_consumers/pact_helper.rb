@@ -12,12 +12,5 @@ Pact.service_provider "Animal Service" do
   end
 end
 
-Pact.provider_states_for "Zoo App" do
-
-    provider_state "an alligator exists" do
-      set_up do
-        # TODO
-      end
-    end
-  
-  end
+require './spec/service_consumers/provider_states/global_state.rb'
+require './spec/service_consumers/provider_states/zoo_app_states.rb'

@@ -20,7 +20,8 @@
           "Content-Type": "application/json"
         },
         "body": {
-          "name": "Betty"
+          "name": "BETTY",
+          "age": 8
         }
       }
     }

@@ -6,7 +6,9 @@ class AnimalServiceClient
     base_uri 'http://animal-service.com'
   
     def get_alligator
-      name = JSON.parse(self.class.get("/alligator").body)['name']
-      Alligator.new(name)
+      body = JSON.parse(self.class.get("/alligator").body)
+      name = body['name']
+      age = body['age']
+      Alligator.new(name.downcase, age)
     end
   end
